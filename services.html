@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Geoneer Geospatial Service</title>
+
+    <link rel="icon" type="image/x-icon" href="assests/img/favicon.png">
+
+    <!-- leaflet  -->
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+
+
+   <!-- font awesome  -->
+   <link rel="stylesheet" href="assests/font-awesome-4.7.0/css/font-awesome.min.css">
+
+   <link rel="stylesheet" href="./css/my.css">
+  </head>
+  <body>
+<!-- Navbar -->
+
+<!-- <div class="row bg-primary text-light pt-2">
+  
+  
+  <div class="col-md-6 pl-5">
+    <p>Email : geoneernepal@gmail.com </p>
+  </div>
+  <div class="col-md-6 text-right pr-5">
+    <p>Call : 9844995572 </p>
+  </div>
+</div> -->
+
+<nav class="navbar  navbar-expand-lg navbar-light bg-light fixed-top" >
+  
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="assests/img/logo.png" alt="company logo" height="50px" class="d-inline-block align-text-top">
+        
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="porfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Company
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="about-us.html">About Us</a></li>
+              <li><a class="dropdown-item" href="/team-members.html">Team Members</a></li>
+              <li><a class="dropdown-item" href="work-with-us">Work with us</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Events & Media
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="events.html">Events</a></li>
+              <li><a class="dropdown-item" href="media.html">Media</a></li>
+              <li><a class="dropdown-item" href="publications">Publications</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        
+        <span class="navbar-text">
+          Step to Spatial World...
+        </span>
+      </div>
+    </div>
+    
+</nav>
+
+<br>
+<br>
+
+
+<!-- ---------- services section started ---------------  -->
+
+<div class="container services-single">
+
+  <h4 class="title">Services</h4>
+    <p>We are professional engineers from the field of Civil Engineering, Geomatics Engineering, Architecture, Electronics Engineering, and Electrical Engineering Sectors.</p>
+
+    <div class="row individual-section">
+      <div class="col-lg-4">
+          <img src="./assests/img/buidling.jpg" height="200px">
+      </div>
+      <div class="col-lg-8">
+          <h4 class="service-title">House Plan Design</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ratione, numquam impedit eos, aspernatur hic quia blanditiis laudantium necessitatibus corporis exercitationem incidunt officia molestiae, alias quas. Dolorum rerum nulla nihil!</p>
+          <button class="button button-rounded">View More</button>
+      </div>
+      </div>
+
+
+        <div class="row individual-section">
+        <div class="col-lg-8">
+        <h4 class="service-title">Surveying</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ratione, numquam impedit eos, aspernatur hic quia blanditiis laudantium necessitatibus corporis exercitationem incidunt officia molestiae, alias quas. Dolorum rerum nulla nihil!</p>
+        <button class="button button-rounded">View More</button>
+        </div>
+        <div class="col-lg-4">
+            <img src="./assests/img/surveying.jpg" height="200px">
+        </div>
+      
+      </div>
+
+      <div class="row individual-section">
+      <div class="col-lg-4">
+          <img src="./assests/img/trainings.png" height="200px" width="350px">
+      </div>
+      <div class="col-lg-8">
+          <h4 class="service-title">Trainings and Capcity Buidling</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ratione, numquam impedit eos, aspernatur hic quia blanditiis laudantium necessitatibus corporis exercitationem incidunt officia molestiae, alias quas. Dolorum rerum nulla nihil!</p>
+          <button class="button button-rounded">View More</button>
+      </div>
+      </div>
+
+
+      
+
+</div>
+
+
+
+<!-- --------------services section end ------------------  -->
+
+
+
+
+<br>
+
+<br>
+
+<br>
+<!-- footer start  -->
+
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">About Us</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione odio cum aliquam sequi consectetur doloremque, non adipisci laudantium mollitia? Officia dignissimos quis ipsa quae consequuntur quasi, cupiditate soluta itaque.</p>
+
+      </div>
+
+      <!-- Grid Column  -->
+      <div class="col-md-3 mt-md-0 mt-3">
+        <h5 class="text-uppercase">Contact Us</h5>
+        <p>Phone Number : +977-9844995572 </p>
+        <p>Email : geoneernepal@gmail.com </p>
+        <p>Location : Ghorahi-14, Dang, Nepal</p>
+        <a href="https://www.facebook.com/geoneer"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/geoneernepal"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        
+        <a href="https://www.twitter.com/geoneernepal"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+        <a href="https://geoneer.com.np"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a>
+
+      </div>
+
+      <!-- Grid column -->
+
+      
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+<h5 class="text-uppercase">Find us on Map</h5>
+        <div id="map" style=" height: 180px;"></div>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="blogs.html">Blog</a>
+          </li>
+          <li>
+            <a href="projects.html">Projects</a>
+          </li>
+          <li>
+            <a href="partnership.html">Partnership</a>
+          </li>
+          <li>
+            <a href="publications.html">Publications</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2022 Copyright:
+    <a href="https://geoneer.com.np/"> geoneer.com.np</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+ <!-- footer end  -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+
+  <script src="js/map.js"></script>
+</html>
+

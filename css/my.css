@@ -1,0 +1,262 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+
+.navbar{
+    background-color: #fff ! important;
+}
+
+.navbar .navbar-brand{
+    font-family: fantasy;
+    
+}
+
+.navbar .navbar-nav li a{
+    font-family:monospace;
+}
+
+.navbar .navbar-nav li a:hover{
+    font-family:monospace;
+    color:darkmagenta !important;
+}
+
+.navbar-text{
+    font-family: cursive;
+}
+
+.about-us .title{
+    margin-left: 0px;
+    margin-top: 60px;
+    font-family: fantasy;
+    font-size: 35px;
+}
+
+.about-us .title:hover{
+    margin-left: 0px;
+    margin-top: 60px;
+    font-family: fantasy;
+    font-size: 35px;
+    color: #14A800;
+}
+
+.services{
+    margin-top: 60px;
+    background-color: #bcfd49;
+    
+}
+
+.services .title{
+    margin-left: 0px;
+    margin-top: 60px;
+    font-family: fantasy;
+    font-size: 35px;
+    
+}
+
+.services .title:hover{
+    margin-left: 0px;
+    margin-top: 60px;
+    font-family: fantasy;
+    font-size: 35px;
+    color: #14A800;
+}
+
+
+.team{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.team .title{
+    font-family: fantasy;
+    font-size: 35px;
+}
+
+.team .title:hover{
+    font-family: fantasy;
+    font-size: 35px;
+    transition: 0.9s;
+    color: #14A800;
+}
+
+
+
+
+.social-icon{
+    margin-top: 0px;
+    margin: 2px;
+    text-align: center;
+    color: #000;
+        
+}
+
+.social-icon-holder{
+    text-align: center;
+    
+}
+
+.social-icon:hover{
+    color: darkmagenta;
+    transition: 0.9s;
+    transform: rotateY(180deg);
+    text-align: center;
+
+}
+
+.team .member-name{
+    text-align: center;
+}
+
+.team .member-post{
+    text-align: center;
+}
+
+
+.subscribe-us{
+    background-color:#14A800 ;
+    height: 60px;
+    margin-top: 20px;
+
+}
+
+.subscribe-us .title{
+    font-family: fantasy;
+    font-size: 40px;
+    color: cornsilk;
+    margin-left: 50px;
+}
+
+.subscribe-us .email{
+    font-family: fantasy;
+    font-size: 30px;
+    color: #14A800;
+    margin-right: 0px;
+    margin-top: 4px;
+    padding-right: 0%;
+}
+
+
+.subscribe-us .submit{
+    font-family: fantasy;
+    font-size: 30px;
+    color: #14A800;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-top: 4px;
+}
+
+.subscribe-us .submit:hover{
+    font-family: fantasy;
+    font-size: 30px;
+    color: darkmagenta;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-top: 4px;
+}
+
+
+.services-single{
+    margin-top: 60px;
+    
+    
+}
+
+.services-single .title{
+    margin-left: 0px;
+    margin-top: 60px;
+    font-family: fantasy;
+    font-size: 35px;
+    
+}
+
+.services-single .title:hover{
+    margin-left: 0px;
+    margin-top: 60px;
+    transition: 0.9s;
+    font-family: fantasy;
+    font-size: 35px;
+    color: #14A800;
+}
+
+
+
+.service-title{
+    margin-left: 0px;
+    
+    font-family: fantasy;
+    font-size: 35px;
+    
+}
+
+.service-title:hover{
+    margin-left: 0px;
+    transition: 0.9s;
+    font-family: fantasy;
+    font-size: 35px;
+    color: #14A800;
+}
+
+.individual-section{
+    margin-top: 20px;
+
+}
+
+.button {
+  background-color: #14A800;
+  border: 12px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+.button:hover {
+  background-color: darkmagenta;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.9s;
+  margin: 4px 2px;
+}
+
+.button-rounded{
+    border-radius: 12px;
+}
+
+hr{
+    width: 100%;
+    height: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-top: 1px solid #8c8b8b;
+	border-bottom: 1px solid #fff;
+}
+
+.contact-info{
+    margin-top: 0px;
+    margin-left: 0px;
+    font-family: fantasy;
+    font-size: 24px;
+    
+}
+
+.contact-info:hover{
+    margin-left: 0px;
+    transition: 0.9s;
+    font-family: fantasy;
+    font-size: 24px;
+    color: #14A800;
+}
+
+
