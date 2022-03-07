@@ -15,7 +15,7 @@ body{
 
 }
 .container{
-    width: 100%;
+    
     height: 100vh;
     margin: 0px;
     padding: 0px;
@@ -37,7 +37,8 @@ body{
 .about-company{
     margin-left: 15px;
     margin-top: 60px;
-    font-family:cursive;
+    margin-right: 15px;
+    font-family:monospace;
     size: 40px;
     text-align: center;
 }
@@ -59,8 +60,8 @@ body{
     margin-top: 20px;
     margin-left: 15px;
     font-family:fantasy;
-    font-size: 24px;
-    text-align: center;
+    
+    
 }
 
 
@@ -70,8 +71,7 @@ body{
     margin-left: 15px;
     transition: 0.9s;
     font-family: fantasy;
-    font-size: 24px;
-    color: #f00170;
+    transform: rotateY(360deg);
 }
 
 .our-work{
@@ -100,7 +100,24 @@ body{
 .social-icon:hover{
     color: #139600;
     transition: 0.9s;
-    transform: rotateY(180deg);
+    transform: rotateY(360deg);
     
 
+}
+
+.phone-number1{
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5px;
+}
+
+.phone-number:hover{
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5px;
+    color: #139600;
 }

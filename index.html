@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,20 +30,32 @@
 
    <link rel="stylesheet" href="./css/my.css">
   </head>
-  <body>
+  <body onload="fetch()">
 <!-- Navbar -->
 
-<!-- <div class="row bg-primary text-light pt-2">
-  
-  
-  <div class="col-md-6 pl-5">
-    <p>Email : geoneernepal@gmail.com </p>
-  </div>
-  <div class="col-md-6 text-right pr-5">
-    <p>Call : 9844995572 </p>
-  </div>
-</div> -->
 
+
+
+<header>
+  <span class="social-icon-holder-top ">
+    
+      <div class="row">
+        <div class="col-lg-6">
+            <i class="fa fa-envelope" aria-hidden="true"></i> geoneernepal@gmail.com 
+            | <i class="fa fa-phone-square" aria-hidden="true"></i> +977-9857880300
+
+        </div>
+
+        <div class="col-lg-6">
+           
+        </div>
+      </div>
+
+
+
+      
+  </span>
+</header>
 <nav class="navbar  navbar-expand-lg navbar-light bg-light fixed-top" >
   
     <div class="container-fluid">
@@ -56,19 +70,19 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="services.html">Services</a>
+            <a class="nav-link" aria-current="page" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="porfolio.html">Portfolio</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Company
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="about-us.html">About Us</a></li>
-              <li><a class="dropdown-item" href="/team-members.html">Team Members</a></li>
-              <li><a class="dropdown-item" href="work-with-us">Work with us</a></li>
+              <li><a class="dropdown-item" href="#about-us">About Us</a></li>
+              <li><a class="dropdown-item" href="#team-members">Team Members</a></li>
+              <li><a class="dropdown-item" href="team-members">Work with us</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -76,18 +90,18 @@
               Events & Media
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="events.html">Events</a></li>
-              <li><a class="dropdown-item" href="media.html">Media</a></li>
-              <li><a class="dropdown-item" href="publications">Publications</a></li>
+              <li><a class="dropdown-item" href="#events-and-media">Events</a></li>
+              <li><a class="dropdown-item" href="#events-and-media">Media</a></li>
+              <li><a class="dropdown-item" href="#events-and-media">Publications</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
         
-        <span class="navbar-text">
-          Step to Spatial World...
+        <span class="navbar-text-phone">
+          Stepping to a Spatial World...
         </span>
       </div>
     </div>
@@ -107,24 +121,21 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="assests/img/1.jpg.crdownload" height="500" width="800" class="d-block w-100" alt="...">
+      <img src="assests/img/surveying.jpg" height="500" width="800" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+        <h5>Land Surveying</h5>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="assests/img/2.png" height="500" width="800" class="d-block w-100" alt="...">
+      <img src="assests/img/2.jpg" height="500" width="800" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+        <h5>Aerial Surveying</h5>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="assests/img/3.jpg" height="500" width="800" class="d-block w-100" alt="...">
+      <img src="assests/img/3.jpeg" height="500" width="800" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+        <h5>WebGIS Development</h5>
       </div>
     </div>
   </div>
@@ -142,103 +153,250 @@
 
 
 <!-- about us -->
-
-<div class="container about-us">
-
+<a id="about-us"></a>
+<div class="about">
+  <div class="row text-center">
+    <div class="col-lg-12 text-center">
+      <div class="about-us ">
   <h4 class="title">About Us</h4>
-  <p>Geoneer Geospatial Service is a Geospatial based industry focusing company founded in 2021.</p>
-  <p>Driven towards Technological innovations using state-of-the-art technologies powerful medium in triggering change. When technological innovations intervene correctly, big changes can take place. Context-fitting solutions can often lead nations to great accomplishments in terms of better livelihood and sustainable development. While we continue in this collective effort of shaping the future, we aim at leading the geoinformatics domain.</p>
+  <p><span class="highlight">Geoneer Geospatial Service, an innovative and passionate</span> geospatial based industry founded in 2022 with the focus on scouting diverse professional skills and identification of future geospatial strategies.
+Geoneer, the technological, ambitious and young company, was founded in 2022 by three youths from the Geomatics Engineering faculty of IOE (Institute of Engineering), Tribhuvan University, who have a keen interest in the geospatial sector. The company has an innovative motto to explore the geospatial industry through the integration of spatial ideas with digital technology. </p>
+Geoneer leads the geomatics industry in Nepal by combining evolving services like land surveying, aerial surveying, GIS and Remote Sensing, land use planning, land consolidation, DGPS surveying, House plan designing, forestry and many more environmental and geospatial solutions.
+</p>
 </div>
 
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6 text-center">
+<div class="our-mission">
+  <h4 class="title">Our Mission</h4>
+  <p class="desc">With impressive bench strength, trustworthy team members, we’ve got a knowledge base to address challenges and provide quality service. Our team-oriented approach focused solely on achieving client objectives through member-to-member collaboration. Geoneer offers comprehensive mapping and GIS services using the latest geospatial technology, empowered by skilled GIS analysts and developers. </p>
+
+</p>
+</div>
+    </div>
+        <div class="col-lg-6 text-center">
+      <div class="our-vision">
+  <h4 class="title">Our Vision</h4>
+  <p  class="desc">Geoneer is a constantly growing company with the theme of consistently recruiting a new team member to fulfil the requirement of our upcoming projects. Our firm specializes in executing a full range of geospatial services with the coordination of different locally grounding organizations. We are legally working, welcome collaboration and are enthusiastic to inbuilt a geospatial circle. </p>
+
+</p>
+</div>
+    </div>
+  </div>
+
+
+
+
+
+</div>
 
 <!-- about us close -->
 
 <!-- services start -->
-<div class="container services">
+
+<a id="services"></a>
+<div class="services">
+  <h3 class="title text-center">Services</h3>
+  <div class="row service-desc">
+    <div class="col-lg-6 col-md-12 col-sm-12 ">
+      <p> At Geoneer, we ramp up a team to solve the challenging problem in regards to creating a better geospatial world.
+</p>
+      <p> Our service team allows us to speed up the adoption of geospatial knowledge to extend the capability for managing geospatial problems.</p>
 
 
-  <h3 class="title">Services</h3>
-  <p>We work as a team to generate, explore, build and validate ideas. We also contextualize innovations around the world to find the best fitting solutions to local problems.</p>
-  <div class="container">
-    <div class="row g-2">
-      <div class="col-6">
-        <div class="p-3 border bg-light">
-          <div class="row">
-          <div class="col-lg-3">
-          <img src="assests/img/total-station.png" height="150" width="150">
-          </div>
-          <div class="col-lg-9">
-            <b>Survey & Mapping</b>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perferendis officia beatae iste unde mollitia ab id expedita, placeat laudantium. Nostrum tempore maiores odit ipsam, ab minus sed nesciunt distinctio.</p>
-          </div>
-        
-          </div>
-      </div>
-      </div>
-      <div class="col-6">
-        <div class="p-3 border bg-light">
-          
-          <div class="row">
-            <div class="col-lg-4">
-            <img src="assests/img/testing.png" height="180" width="180">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <div class="card">
+            <img class="card-img-top" src="./assests/img/drone2.png"  height="150px" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Aerial Surveying</h5>
+              <p class="card-text">
+                We create topographic maps and plans, cadastral maps, digital elevation models, longitudinal and terrain profiles through the use of Drone. Drones greatly accelerate and simplify topographic surveys for land management and planning, site scouting, allotment planning and design, as well as final construction of roads, buildings and utilities.
+              </p>
+              
             </div>
-            <div class="col-lg-8">
-              <b>GIS Software & Application Development</b>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perferendis officia beatae iste unde mollitia ab id expedita, placeat laudantium. Nostrum tempore maiores odit ipsam, ab minus sed nesciunt distinctio.</p>
+          </div>
+        </div>
+        <div class="col-lg-6  col-md-12 col-sm-12">
+          <div class="card" >
+            <img class="card-img-top" src="./assests/img/dpr.jpg" height="150px" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Detail Project Report</h5>
+              <p class="card-text">We turn the idea of your project into a reality. Our blueprint design focuses to convert the corporate investment into a project idea that gives good monetary returns. </p>
+              
             </div>
-          
-            </div>
-        
-        
+          </div>
         </div>
       </div>
-      <div class="col-6">
-        <div class="p-3 border bg-light">
-          
-          <div class="row">
-            <div class="col-lg-4">
-            <img src="assests/img/map.png" height="180" width="180">
-            </div>
-            <div class="col-lg-8">
-              <b>Resource Mapping</b>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perferendis officia beatae iste unde mollitia ab id expedita, placeat laudantium. Nostrum tempore maiores odit ipsam, ab minus sed nesciunt distinctio.</p>
-            </div>
-          
+    </div>
+
+    <div class="col-lg-6 col-md-12 col-sm-12">
+
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <div class="card" >
+            <img class="card-img-top" src="./assests/img/HOUSE PLAN.jpg"  height="150px" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">House Floor Plan Design</h5>
+              <p class="card-text">Remember us, to design a floor plan drawing with the scale sizes that feature the placing of rooms, fittings and furniture. What’s more than having a precise floor plan with proper alignment of interior and exterior features. </p>
+              
             </div>
           </div>
+        </div>
+        <div class="col-lg-6  col-md-12 col-sm-12">
+          <div class="card" >
+            <img class="card-img-top" src="./assests/img/Total_Station.jpg" height="150px" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Land Surveying</h5>
+              <p class="card-text">
+                The planning and execution of most forms of construction require land surveying. We are mainly focused on describing boundary lines, calculating land area, ensuring the location of buildings, and settling property line disputes…
+                 </p>
+              
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-6">
-        <div class="p-3 border bg-light">
-          <div class="row">
-            <div class="col-lg-4">
-            <img src="assests/img/qualitative-research.png" height="180" width="180">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <div class="card" >
+            <img class="card-img-top" src="./assests/img/iee.jpg"  height="150px" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Initial Environment Examination</h5>
+              <p class="card-text"> We provide the first assessment of the reasonably foreseeable impacts on the environment of the proposed activity or activities. We prepare a report that discusses the generic environmental impacts and mitigation measures relating to the location, design, construction and operation of physical works. </p>
+              
             </div>
-            <div class="col-lg-8">
-              <b>Research and Design</b>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perferendis officia beatae iste unde mollitia ab id expedita, placeat laudantium. Nostrum tempore maiores odit ipsam, ab minus sed nesciunt distinctio.</p>
+          </div>
+        </div>
+        <div class="col-lg-6  col-md-12 col-sm-12">
+          <div class="card" >
+            <img class="card-img-top" src="./assests/img/trainings.jpg" height="150px" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Trainings and Capacity Building</h5>
+              <p class="card-text">We provide training for the enhancement of the geospatial sector that includes ArcGis training, AutoCAD training, and many more, which enables beginners to strengthen their capabilities to develop, implement and maintain effective geospatial strategies. </p>
+              
             </div>
-          
-            </div></div>
+          </div>
+        </div>
       </div>
     </div>
+
   </div>
+
+  
+   
+   
 </div>
 
 <!-- services close  -->
 
 
-<!-- team members  -->
+<!-- portfolio start -->
+<a id="portfolio"></a>
+<h3  class="port-title text-center">Portfolio</h3>
 
-<div class="container team center" >
+<div class="row d-flex justify-content-around portfolio">
+  <div class="col-lg-4 port-one d-flex justify-content-center">
+    <div class="row">
+      <div class="col-lg-12 d-flex justify-content-around ">
+        <i class="fa fa-file-powerpoint-o fa-4x port-icon" aria-hidden="true"></i>
+      </div>
+      <div class="col-lg-12 d-flex justify-content-around ">
+        <p class="count">1</p>
+      </div>
+      <div class="col-lg-12 d-flex justify-content-around ">
+        <p class="text">On Going Projects</p>
+      </div>
+    </div>
+   
+  </div>
+  <div class="col-lg-4 port-two d-flex justify-content-center">
+    <div class="row">
+      <div class="col-lg-12 d-flex justify-content-around ">
+        <i class="fa fa-briefcase fa-4x port-icon" aria-hidden="true"></i>
+      </div>
+      <div class="col-lg-12 d-flex justify-content-around ">
+        <p class="count">0</p>
+      </div>
+      <div class="col-lg-12 d-flex justify-content-around ">
+        <p class="text">Completed Projects</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 port-three d-flex justify-content-center">
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-around ">
+        <i class="fa fa-user fa-4x port-icon" aria-hidden="true"></i>
+      </div>
+      <div class="col-lg-12 d-flex justify-content-around ">
+        <p class="count">4</p>
+      </div>
+      <div class="col-lg-12 d-flex justify-content-around ">
+        <p class="text">Number of Employees</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 port-four d-flex justify-content-center">
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-around ">
+        <i class="fa fa-street-view fa-4x port-icon" aria-hidden="true"></i>
+      </div>
+      <div class="col-lg-12 d-flex justify-content-around ">
+        <p class="count osm-mapper-count"></p>
+      </div>
+      <div class="col-lg-12 d-flex justify-content-around ">
+        <p class="text">Number of OSM Mappers</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 port-five d-flex justify-content-center">
+        <div class="row">
+      <div class="col-lg-12 d-flex justify-content-around ">
+        <i class="fa fa-road fa-4x port-icon" aria-hidden="true"></i>
+      </div>
+      <div class="col-lg-12 d-flex justify-content-around ">
+        <p class="count total-road-edits"></p>
+      </div>
+      <div class="col-lg-12 d-flex justify-content-around ">
+        <p class="text">Total km of roads mapped</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4 port-six d-flex justify-content-center">
+        <div class="row">
+      <div class="col-lg-12 d-flex justify-content-around ">
+        <i class="fa fa-building fa-4x port-icon" aria-hidden="true"></i>
+      </div>
+      <div class="col-lg-12 d-flex justify-content-around ">
+        <p class="count total-building-edits"></p>
+      </div>
+      <div class="col-lg-12 d-flex justify-content-around ">
+        <p class="text">Total Buildings edits</p>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+<!-- portfolio closes  -->
+
+
+<!-- team members  -->
+<a id="team-members"></a>
+<div class="team center" >
   
     <h3 class="title">Team Members</h3>
     <div class="row ">
-      <div class="col-lg-4">
+      <div class="col-lg-4 d-flex justify-content-center">
         <div class="card" style="width: 18rem;">
           <img src="assests/img/aashis_aryal.JPG"  height="250" width="180"  class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title member-name">Er. Aashis Aryal</h5>
-            <p class="card-text member-post">Co-founder / Frontend Developer</p>
+            <p class="card-text member-post">Co-founder</p>
             <span class="social-icon-holder center">
             <a href="#" class="social-icon"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
             <a href="#"  class="social-icon"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
@@ -249,35 +407,35 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-4 d-flex justify-content-center">
         <div class="card" style="width: 18rem;">
           <img src="assests/img/dinesh_bishwakarma.jpg"  height="250" width="180"  class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title member-name">Er. Dinesh Bishwakarma</h5>
-            <p class="card-text member-post">Co-founder / GIS Developer</p>
+            <p class="card-text member-post">Co-founder</p>
               <span class="social-icon-holder center">
-            <a href="#" class="social-icon"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
-            <a href="#"  class="social-icon"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-            <a href="#"  class="social-icon"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-            <a href="#"  class="social-icon"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a>
-            <a href="#" class="social-icon"><i class="fa fa-linkedin fa-2x" ></i></a>
+            <a href="https://www.facebook.com/lostb1" target="new" class="social-icon"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/lostb1" target="new"  class="social-icon"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+            <a href="https://www.twitter.com/mylife_dinesh08" target="new"  class="social-icon"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+            <a href="https://www.dineshbishwakarma.com.np" target="new"   class="social-icon"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/lostb1d/"  target="new"  class="social-icon"><i class="fa fa-linkedin fa-2x" ></i></a>
           </span>
           </div>
         </div>
         
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-4 d-flex justify-content-center">
         <div class="card" style="width: 18rem;">
           <img src="assests/img/gaire_sagar.JPG" height="250" width="180" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title member-name">Er. Sagar Gaire</h5>
-            <p class="card-text member-post">Co-founder / Backend Developer</p>
+            <p class="card-text member-post">Co-founder</p>
               <span class="social-icon-holder center">
-            <a href="#" class="social-icon"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
-            <a href="#"  class="social-icon"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-            <a href="#"  class="social-icon"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/gaire.sagar8011/"  target="new" class="social-icon"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/__gairesagar__/"  target="new" class="social-icon"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+            <a href="https://www.twitter.com/gairesagar8011"  target="new" class="social-icon"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
             <a href="#"  class="social-icon"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a>
-            <a href="#" class="social-icon"><i class="fa fa-linkedin fa-2x" ></i></a>
+            <a href="https://www.linkedin.com/in/sagar-gaire/"  target="new" class="social-icon"><i class="fa fa-linkedin fa-2x" ></i></a>
           </span>
           </div>
         </div>
@@ -292,12 +450,12 @@
   <br>
 
   <div class="row">
-    <div class="col-lg-4">
+    <div class="col-lg-4 d-flex justify-content-center">
         <div class="card" style="width: 18rem;">
-          <img src="assests/img/anmol_mahato.jpg"  height="250" width="180"  class="card-img-top" alt="...">
+          <img src="assests/img/bhoj_bista.jpg"  height="250" width="180"  class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title member-name">Anamol Mahato</h5>
-            <p class="card-text member-post">Intern (Civil Engineering)</p>
+            <h5 class="card-title member-name">Bhoj Raj Bist</h5>
+            <p class="card-text member-post">OSM Lead</p>
             <span class="social-icon-holder center">
             <a href="#" class="social-icon"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
             <a href="#"  class="social-icon"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
@@ -309,12 +467,12 @@
         </div>
       </div>
 
-      <div class="col-lg-4">
-        <div class="card" style="width: 18rem;">
-          <img src="assests/img/man (2).png"  height="250" width="180"  class="card-img-top" alt="...">
+      <div class="col-lg-4 d-flex justify-content-center">
+         <div class="card" style="width: 18rem;">
+          <img src="assests/img/suraj_gairejpg.jpg"  height="250" width="180"  class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title member-name">Demo Name</h5>
-            <p class="card-text member-post">GIS Analyst</p>
+            <h5 class="card-title member-name">Suraj Gaire</h5>
+            <p class="card-text member-post">IT Intern</p>
             <span class="social-icon-holder center">
             <a href="#" class="social-icon"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
             <a href="#"  class="social-icon"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
@@ -324,23 +482,11 @@
           </span>
           </div>
         </div>
+       
       </div>
 
-      <div class="col-lg-4">
-        <div class="card" style="width: 18rem;">
-          <img src="assests/img/man.png"  height="250" width="180"  class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title member-name">John PK</h5>
-            <p class="card-text member-post">HR Manager</p>
-            <span class="social-icon-holder center">
-            <a href="#" class="social-icon"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
-            <a href="#"  class="social-icon"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-            <a href="#"  class="social-icon"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-            <a href="#"  class="social-icon"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a>
-            <a href="#" class="social-icon"><i class="fa fa-linkedin fa-2x" ></i></a>
-          </span>
-          </div>
-        </div>
+      <div class="col-lg-4 d-flex justify-content-center">
+        
       </div>
   </div>
 
@@ -348,11 +494,64 @@
 
  <!-- team members  -->
 
+
+ <!-- events section -->
+ <a id="events-and-media"></a>
+<div class="events-and-media">
+ <h3 class="port-title text-center">Events & Media</h3>
+  <p class="text-center"> Geoneer Geospatial Service has organized or involved in organizing different events and program related to Geospatial Domain. Some of the events and programs organized by Geoneer and upcoming events and programs are listed below</p>
+  <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <div class="card">
+            <div class="row">
+              <div class="col-lg-4">
+                <img class="card-img-top" src="./assests/img/gis-training.jfif"  height="150px" width="150px" alt="Card image cap">
+              </div>
+              <div class="col-lg-8">
+                <div class="card-body">
+                <h5 class="card-title">ArcGIS Training</h5>
+                <p class="card-text">This training module is introduced to offer basic concepts of GIS , to provide guidance and practice for the use of ArcGis Desktop software, including network analysis, spatial analysis , geoprocessing tools, ArcToolbox and many more.</p>
+                <p class="card-text">Status: Upcoming</p>
+                
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="card">
+            <div class="row">
+              <div class="col-lg-4">
+                <img class="card-img-top" src="./assests/img/auto-cad.png"  height="150px" width="150px" alt="Card image cap">
+              </div>
+              <div class="col-lg-8">
+                <div class="card-body">
+                <h5 class="card-title">AutoCAD Training</h5>
+                <p class="card-text">It’s a great way to start with basics and move to more advanced courses. This training module is introduced to offer comprehensive knowledge about using the AutoCAD software and its features.Improve your drawing and designing skills to enhance your profession.</p>
+                <p class="card-text">Status: Upcoming</p>
+                
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+
+  </div>
+ </div>
+
+
+
+ <!-- events section closes  -->
+
 <!-- suscribe section start -->
 
-  <div class="container subscribe-us">
+  <div class=" subscribe-us ">
     <div class="row">
-      <div class="col-lg-6 "><span class="title">Join Our Mailing List</span>
+      <div class="col-lg-6 d-flex justify-content-center"><span class="title">Join Our Mailing List</span>
         
       </div>
       <div class="col-lg-4">
@@ -374,10 +573,11 @@
  <!-- footer start  -->
 
 <!-- Footer -->
+<a id="contact"></a>
 <footer class="page-footer font-small blue pt-4">
 
   <!-- Footer Links -->
-  <div class="container-fluid text-center text-md-left">
+  <div class=" text-center text-md-left">
 
     <!-- Grid row -->
     <div class="row">
@@ -387,14 +587,14 @@
 
         <!-- Content -->
         <h5 class="text-uppercase">About Us</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione odio cum aliquam sequi consectetur doloremque, non adipisci laudantium mollitia? Officia dignissimos quis ipsa quae consequuntur quasi, cupiditate soluta itaque.</p>
-
+        <p>Geoneer Geospatial Service, an innovative and passionate geospatial based industry, founded in 2022 with the focus on scouting diverse professional skills and identification of future geospatial strategies.
       </div>
 
       <!-- Grid Column  -->
+      
       <div class="col-md-3 mt-md-0 mt-3">
         <h5 class="text-uppercase">Contact Us</h5>
-        <p>Phone Number : +977-9844995572 </p>
+        <p>Phone Number : 9857880300 </p>
         <p>Email : geoneernepal@gmail.com </p>
         <p>Location : Ghorahi-14, Dang, Nepal</p>
         <a href="https://www.facebook.com/geoneer"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
@@ -474,3 +674,24 @@
 
   <script src="js/map.js"></script>
 </html>
+
+<script>
+  console.log("ABCDEFGHIJKL")
+  
+    
+  function fetch(){
+    $.ajax({
+      url: "http://osm-stats-production-api.azurewebsites.net/stats/geoneer",
+      type: "GET",
+      dataType:"JSON",
+      data: JSON.stringify({ }),
+      success: function(data){
+        console.log(data);
+        $('.osm-mapper-count').append(JSON.stringify(data.users));
+        $('.total-building-edits').append(JSON.stringify(data.buildings))
+        $('.total-road-edits').append(parseFloat(JSON.stringify(data.roads)).toFixed(2))
+      }
+    });
+  }
+
+</script>

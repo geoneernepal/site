@@ -4,10 +4,49 @@
   margin-right: auto;
   width: 100%;
 }
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #fffefc;
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%;
+    overflow-x: hidden;
 
+}
+
+header{
+    background: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    margin-left: 20px;
+}
+
+
+
+
+
+.social-icon-holder-top{
+    margin-bottom: 5px;
+}
+
+.social-icon-top{
+    margin-top: 0px;
+    margin-right: 5px;
+    color: #000;   
+}
+
+.social-icon-top:hover{
+    color: #139600;
+    transition: 0.9s;
+    transform: rotateY(360deg);
+}
 
 .navbar{
-    background-color: #fff ! important;
+    background-color:#fff ! important;
+    padding:0px;
+    position: sticky;
+    top: 0px;
 }
 
 .navbar .navbar-brand{
@@ -24,9 +63,29 @@
     color:darkmagenta !important;
 }
 
-.navbar-text{
+.navbar-text-phone{
     font-family: cursive;
+    margin-right: 5px;  
+    }
+
+.about{
+    background-image: url('./../assests/img/bg.png');
+    background-size: 500px;
+    
+     background-position: center;
+     background-repeat: no-repeat;
+     margin-left: 50px;
+     margin-right: 50px;
+     
+     
+
 }
+
+
+ .about-us{
+        
+     
+ }   
 
 .about-us .title{
     margin-left: 0px;
@@ -40,17 +99,50 @@
     margin-top: 60px;
     font-family: fantasy;
     font-size: 35px;
+    transition: 0.9s;
     color: #14A800;
 }
 
+.about-us .highlight{
+    color: #14A800;
+    font-weight: bold;
+}
+
+.our-mission .title{
+        margin-left: 0px;
+    margin-top: 40px;
+    font-family: fantasy;
+    font-size: 25px;
+}
+
+.our-mission .title:hover{
+    color: #14A800;
+    transition: 0.9s;
+
+}
+
+.our-vision .title{
+        margin-left: 0px;
+    margin-top: 40px;
+    font-family: fantasy;
+    font-size: 25px;
+}
+
+.our-vision .title:hover{
+    color: #14A800;
+    transition: 0.9s;
+
+}
+
 .services{
-    margin-top: 60px;
-    background-color: #bcfd49;
-    
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #fff;    
 }
 
 .services .title{
-    margin-left: 0px;
+    
     margin-top: 60px;
     font-family: fantasy;
     font-size: 35px;
@@ -58,12 +150,159 @@
 }
 
 .services .title:hover{
-    margin-left: 0px;
+    
     margin-top: 60px;
     font-family: fantasy;
     font-size: 35px;
+    transition: 0.9s;
     color: #14A800;
 }
+
+.service-desc{
+    
+}
+.services .card{
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px grey;
+  -webkit-transition:  box-shadow .6s ease-out;
+     box-shadow: .8px .9px 3px grey;
+     margin:1px;
+     margin-top: 15px;
+     
+     
+}
+
+.services .card:hover{
+    box-shadow: 1px 8px 20px grey;
+    -webkit-transition:  box-shadow .6s ease-in;
+}
+
+.services .card-img-top{
+    border-radius: 0 0 0 20px;
+    height: 80px;
+    width: 80px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.card .card-body .card-title{
+    color: #127C00;
+    font-weight: bold;
+
+}
+
+
+.port-title{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-family: fantasy;
+    font-size: 35px;
+}
+
+.port-title:hover{
+    
+    transition: 0.9s;
+    color: #14A800;
+}
+
+
+.portfolio{
+    background-color: #8c8b8b;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    
+}
+
+.portfolio .port-one{
+    background-color: #cffcc0;
+
+}
+.portfolio .port-one .count{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.portfolio .port-one .text{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+.portfolio .port-two{
+    background-color:#7a95ff;
+}
+
+.portfolio .port-two .count{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.portfolio .port-two .text{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.portfolio .port-three{
+    background-color: #cffcc0;
+}
+
+.portfolio .port-three .count{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.portfolio .port-three .text{
+    font-size: 20px;
+    font-weight: bold;
+}
+.portfolio .port-four{
+    background-color: #7a95ff;
+
+}
+.portfolio .port-four .count{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.portfolio .port-four .text{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.portfolio .port-five{
+    background-color: #cffcc0;
+
+}
+.portfolio .port-five .count{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.portfolio .port-five .text{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.portfolio .port-six{
+    background-color: #7a95ff;
+
+}
+.portfolio .port-six .count{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.portfolio .port-six .text{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.port-icon{
+    margin-top: 10px;
+}
+
+
 
 
 .team{
@@ -74,6 +313,7 @@
 .team .title{
     font-family: fantasy;
     font-size: 35px;
+    margin-top: 100px;
 }
 
 .team .title:hover{
@@ -89,22 +329,22 @@
 .social-icon{
     margin-top: 0px;
     margin: 2px;
+    size: 2px;
     text-align: center;
     color: #000;
         
 }
 
-.social-icon-holder{
-    text-align: center;
-    
+.social-icon{
+    margin-top: 0px;
+    margin: 2px;
+    color: #000;
 }
 
 .social-icon:hover{
-    color: darkmagenta;
+    color: #139600;
     transition: 0.9s;
-    transform: rotateY(180deg);
-    text-align: center;
-
+    transform: rotateY(360deg);
 }
 
 .team .member-name{
@@ -115,10 +355,46 @@
     text-align: center;
 }
 
+.events-and-media{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+
+}
+.events-and-media:hover{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0px;
+    margin-top: 30px;
+    transition: 0.9s;
+
+}
+
+.events-and-media .card{
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px grey;
+  -webkit-transition:  box-shadow .6s ease-out;
+     box-shadow: .8px .9px 3px grey;
+     margin:1px;
+     margin-top: 15px;
+     
+     
+}
+
+.events-and-media .card:hover{
+    box-shadow: 1px 8px 20px grey;
+    -webkit-transition:  box-shadow .6s ease-in;
+}
+
+.events-and-media .card .card-img-top{
+    height: 150px;
+    width: 190px;
+    margin: 10px;
+}
 
 .subscribe-us{
-    background-color:#14A800 ;
-    height: 60px;
+    background-color: #14A800;
+    text-align: center;
     margin-top: 20px;
 
 }
@@ -127,7 +403,7 @@
     font-family: fantasy;
     font-size: 40px;
     color: cornsilk;
-    margin-left: 50px;
+    
 }
 
 .subscribe-us .email{
@@ -146,6 +422,7 @@
     color: #14A800;
     margin-left: 0px;
     padding-left: 0px;
+    
     margin-top: 4px;
 }
 
@@ -259,4 +536,37 @@ hr{
     color: #14A800;
 }
 
+.work-with-us{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.work-with-us .title{
+    margin-left: 0px;
+    margin-top: 40px;
+    font-family: fantasy;
+    font-size: 20px;
+    
+}
+
+.work-with-us .title:hover{
+    margin-left: 0px;
+    margin-top: 40px;
+    transition: 0.9s;
+    font-family: fantasy;
+    font-size: 20px;
+    color: #14A800;
+}
+
+.work-with-us .txt-box{
+    background: #14A800;
+    margin: 0px;
+    padding: 0px;
+}
+
+.work-with-us .description{
+    margin-left: 80px;
+    margin-right: 80px;
+}
 
